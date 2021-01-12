@@ -25,7 +25,6 @@ public class BaseClass {
 	
 	public static Properties readProperties() throws Exception {
 		Properties prop = new Properties();
-		System.out.println(System.getProperty("user"));
 		String fileName = System.getProperty("user.dir")+"\\Config/Config.properties";
 		InputStream is = null;
 		try {

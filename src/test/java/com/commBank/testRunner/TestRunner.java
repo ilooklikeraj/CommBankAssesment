@@ -2,7 +2,7 @@ package com.commBank.testRunner;
 
 import org.junit.runner.RunWith;
 
-import com.commBank.stepDefinitions.BaseClass;
+
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)		
 @CucumberOptions(features = "features", glue = { "stepDefinition" }, plugin = { "pretty",
 "html:target/cucumber-reports" }, monochrome = true ) 						
-public class TestRunner extends BaseClass 				
+public class TestRunner 				
 {		
 	
 }

@@ -160,7 +160,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>LambdatestTodoSample</projectName>  
+							<projectName>commBankAssesment</projectName>  
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
 							<buildNumber>1</buildNumber>
