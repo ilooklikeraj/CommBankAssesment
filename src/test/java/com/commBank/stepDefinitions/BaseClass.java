@@ -25,7 +25,8 @@ public class BaseClass {
 	
 	public static Properties readProperties() throws Exception {
 		Properties prop = new Properties();
-		String fileName = "C:\\Users\\ilook\\eclipse-workspace\\commBankAssesment\\Config\\Config.properties";
+		System.out.println(System.getProperty("user"));
+		String fileName = System.getProperty("user.dir")+"\\Config/Config.properties";
 		InputStream is = null;
 		try {
 		    is = new FileInputStream(fileName);

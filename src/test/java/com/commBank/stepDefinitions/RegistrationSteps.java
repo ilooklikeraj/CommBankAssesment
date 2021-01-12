@@ -17,7 +17,7 @@ Properties prop;
 	@Given("^User Launch Chrome Browser$")
 	public void user_Launch_Chrome_Browser() throws Throwable {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ilook\\eclipse-workspace\\commBankAssesment\\Drivers\\chromedriver.exe");
+				System.getProperty("user.dir")+"\\Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		registrationPage = new RegistrationPage(driver);
 	}
