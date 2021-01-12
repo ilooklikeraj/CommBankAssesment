@@ -1,0 +1,6 @@
+com\commBank\stepDefinitions\BaseClass.class
+com\commBank\stepDefinitions\Hooks.class
+com\commBank\stepDefinitions\RegistrationSteps.class
+com\commBank\utilities\WaitHelper.class
+com\commBank\testRunner\TestRunner.class
+com\commBank\PageObjects\RegistrationPage.class
