@@ -2,33 +2,36 @@ package com.commBank.stepDefinitions;
 
 import java.util.Properties;
 
-import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.commBank.PageObjects.RegistrationPage;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class RegistrationSteps extends BaseClass {
-Properties prop;
+	Properties prop;
+
+	@Before public void setUp(){ 
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+	   } 
 	@Given("^User Launch Chrome Browser$")
 	public void user_Launch_Chrome_Browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir")+"\\Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		
 		registrationPage = new RegistrationPage(driver);
 	}
 
 	@Given("^Uesr Opens URL$")
 	public void uesr_Opens_URL() throws Throwable {
-		prop=readProperties();
+		prop = readProperties();
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
 	}
-
 
 	@When("^User Clicks On Register Online Now button$")
 	public void user_Clicks_On_Register_Online_Now_button() throws Throwable {
@@ -108,4 +111,7 @@ Properties prop;
 		registrationPage.getServiceDetailsPageTitleAndVerify(successfulRegistraionVerify);
 	}
 
+	@After public void tearDown(){ 
+		driver.quit();
+	   } 
 }
