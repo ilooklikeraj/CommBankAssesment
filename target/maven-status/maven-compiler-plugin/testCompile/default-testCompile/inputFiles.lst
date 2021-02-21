@@ -1,6 +1,6 @@
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\stepDefinitions\BaseClass.java
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\utilities\WaitHelper.java
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\PageObjects\RegistrationPage.java
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\stepDefinitions\RegistrationSteps.java
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\testRunner\TestRunner.java
-C:\Users\ilook\eclipse-workspace\commBankAssesment\src\test\java\com\commBank\stepDefinitions\Hooks.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\stepDefinitions\EbayAddToCartFlowSteps.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\utilities\WaitHelper.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\stepDefinitions\Hooks.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\testRunner\TestRunner.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\stepDefinitions\BaseClass.java
+C:\Users\ilook\Downloads\EbayAssesment\src\test\java\com\ebayAssessment\PageObjects\EbayAddToCartFlowPage.java
